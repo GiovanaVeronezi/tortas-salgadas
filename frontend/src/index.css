@@ -472,6 +472,10 @@ a {
   .footer-container {
   grid-template-columns: 1fr 1fr;
 }
+
+.catalogo-grid {
+  grid-template-columns: repeat(2, 1fr);
+}
 }
 
 @media (max-width: 600px) {
@@ -556,6 +560,22 @@ a {
   .footer-container {
   grid-template-columns: 1fr;
   gap: 40px;
+}
+
+.tortas-header {
+  padding: 70px 20px 50px;
+}
+
+.tortas-header h1 {
+  font-size: 36px;
+}
+
+.catalogo-tortas {
+  padding: 60px 20px;
+}
+
+.catalogo-grid {
+  grid-template-columns: 1fr;
 }
 }
 
@@ -846,4 +866,72 @@ a {
   color: rgba(255, 255, 255, 0.5);
 
   font-size: 13px;
+}
+
+/* PÁGINA DE TORTAS */
+
+.pagina-tortas {
+  min-height: 70vh;
+}
+
+/* CABEÇALHO DO CATÁLOGO */
+
+.tortas-header {
+  padding: 90px 30px 60px;
+
+  text-align: center;
+
+  background-color: #f3ebe4;
+}
+
+.tortas-header > span {
+  font-size: 13px;
+
+  font-weight: bold;
+
+  letter-spacing: 2px;
+
+  color: #c56b32;
+}
+
+.tortas-header h1 {
+  margin-top: 15px;
+
+  font-size: 48px;
+
+  line-height: 1.2;
+}
+
+.tortas-header h1 strong {
+  color: #8b451f;
+}
+
+.tortas-header p {
+  max-width: 600px;
+
+  margin: 20px auto 0;
+
+  color: #6f625b;
+
+  font-size: 17px;
+
+  line-height: 1.7;
+}
+
+/* CATÁLOGO */
+
+.catalogo-tortas {
+  padding: 80px 30px;
+}
+
+.catalogo-grid {
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 30px;
 }
