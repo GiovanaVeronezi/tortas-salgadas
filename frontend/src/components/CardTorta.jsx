@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function CardTorta({ torta }) {
   return (
     <article className="card-torta">
@@ -21,12 +23,13 @@ function CardTorta({ torta }) {
         <div className="card-torta-rodape">
 
           <strong>
-            A partir de R$ {torta.preco.toFixed(2).replace(".", ",")}
+            A partir de R${" "}
+            {torta.preco.toFixed(2).replace(".", ",")}
           </strong>
 
-          <a href={`/tortas/${torta.id}`}>
+          <Link to={`/tortas/${torta.id}`}>
             Ver detalhes
-          </a>
+          </Link>
 
         </div>
 

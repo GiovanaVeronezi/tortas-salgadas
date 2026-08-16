@@ -476,6 +476,18 @@ a {
 .catalogo-grid {
   grid-template-columns: repeat(2, 1fr);
 }
+
+.detalhes-container {
+  grid-template-columns: 1fr;
+}
+
+.detalhes-conteudo {
+  max-width: none;
+}
+
+.detalhes-imagem img {
+  height: 450px;
+}
 }
 
 @media (max-width: 600px) {
@@ -576,6 +588,18 @@ a {
 
 .catalogo-grid {
   grid-template-columns: 1fr;
+}
+
+.pagina-detalhes {
+  padding: 60px 20px;
+}
+
+.detalhes-conteudo h1 {
+  font-size: 36px;
+}
+
+.detalhes-imagem img {
+  height: 350px;
 }
 }
 
@@ -934,4 +958,144 @@ a {
   grid-template-columns: repeat(3, 1fr);
 
   gap: 30px;
+}
+
+/* DETALHES DA TORTA */
+
+.pagina-detalhes {
+  padding: 90px 30px;
+  background-color: #fffaf5;
+}
+
+.detalhes-container {
+  max-width: 1100px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 70px;
+  align-items: center;
+}
+
+.detalhes-imagem {
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.detalhes-imagem img {
+  width: 100%;
+  height: 550px;
+
+  object-fit: cover;
+
+  display: block;
+}
+
+.detalhes-conteudo {
+  max-width: 500px;
+}
+
+.detalhes-categoria {
+  color: #c56b32;
+
+  font-size: 13px;
+  font-weight: bold;
+
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.detalhes-conteudo h1 {
+  margin-top: 15px;
+
+  font-size: 48px;
+  line-height: 1.15;
+}
+
+.detalhes-descricao {
+  margin-top: 25px;
+
+  color: #6f625b;
+
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.detalhes-preco {
+  margin-top: 25px;
+
+  color: #8b451f;
+
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.detalhes-opcao {
+  margin-top: 25px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.detalhes-opcao label {
+  font-weight: bold;
+}
+
+.detalhes-opcao select,
+.detalhes-opcao input {
+  width: 100%;
+
+  padding: 13px;
+
+  border: 1px solid #d8c8bd;
+  border-radius: 6px;
+
+  background-color: white;
+
+  font-size: 15px;
+}
+
+.detalhes-botao {
+  width: 100%;
+
+  margin-top: 30px;
+
+  padding: 16px;
+
+  border: none;
+  border-radius: 6px;
+
+  background-color: #8b451f;
+  color: white;
+
+  font-size: 16px;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.detalhes-botao:hover {
+  background-color: #6f3518;
+}
+
+/* TORTA NÃO ENCONTRADA */
+
+.torta-nao-encontrada {
+  min-height: 60vh;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 15px;
+}
+
+.torta-nao-encontrada p {
+  color: #6f625b;
 }
