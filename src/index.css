@@ -470,24 +470,24 @@ a {
   }
 
   .footer-container {
-  grid-template-columns: 1fr 1fr;
-}
+    grid-template-columns: 1fr 1fr;
+  }
 
-.catalogo-grid {
-  grid-template-columns: repeat(2, 1fr);
-}
+  .catalogo-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
-.detalhes-container {
-  grid-template-columns: 1fr;
-}
+  .detalhes-container {
+    grid-template-columns: 1fr;
+  }
 
-.detalhes-conteudo {
-  max-width: none;
-}
+  .detalhes-conteudo {
+    max-width: none;
+  }
 
-.detalhes-imagem img {
-  height: 450px;
-}
+  .detalhes-imagem img {
+    height: 450px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -570,37 +570,243 @@ a {
   }
 
   .footer-container {
-  grid-template-columns: 1fr;
-  gap: 40px;
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .tortas-header {
+    padding: 70px 20px 50px;
+  }
+
+  .tortas-header h1 {
+    font-size: 36px;
+  }
+
+  .catalogo-tortas {
+    padding: 60px 20px;
+  }
+
+  .catalogo-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pagina-detalhes {
+    padding: 60px 20px;
+  }
+
+  .detalhes-conteudo h1 {
+    font-size: 36px;
+  }
+
+  .detalhes-imagem img {
+    height: 350px;
+  }
 }
 
-.tortas-header {
-  padding: 70px 20px 50px;
+/* PÁGINAS INSTITUCIONAIS */
+
+.pagina-cabecalho {
+  padding: 90px 30px 60px;
+  text-align: center;
+  background-color: #f3ebe4;
 }
 
-.tortas-header h1 {
-  font-size: 36px;
+.pagina-cabecalho > span {
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #c56b32;
 }
 
-.catalogo-tortas {
-  padding: 60px 20px;
+.pagina-cabecalho h1 {
+  max-width: 760px;
+  margin: 15px auto 0;
+  font-size: 48px;
+  line-height: 1.2;
 }
 
-.catalogo-grid {
-  grid-template-columns: 1fr;
+.pagina-cabecalho h1 strong {
+  color: #8b451f;
 }
 
-.pagina-detalhes {
-  padding: 60px 20px;
+.pagina-cabecalho p {
+  max-width: 620px;
+  margin: 20px auto 0;
+  color: #6f625b;
+  font-size: 17px;
+  line-height: 1.7;
 }
 
-.detalhes-conteudo h1 {
-  font-size: 36px;
+.historia-sobre,
+.contato-conteudo {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 30px;
 }
 
-.detalhes-imagem img {
-  height: 350px;
+.historia-sobre {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 80px;
 }
+
+.historia-imagem {
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.historia-imagem img {
+  width: 100%;
+  height: 500px;
+  display: block;
+  object-fit: cover;
+}
+
+.historia-conteudo,
+.contato-informacoes {
+  max-width: 520px;
+}
+
+.historia-conteudo h2,
+.contato-informacoes h2 {
+  margin-top: 15px;
+  font-size: 40px;
+  line-height: 1.2;
+}
+
+.historia-conteudo p,
+.contato-informacoes > p {
+  margin-top: 20px;
+  color: #6f625b;
+  line-height: 1.7;
+}
+
+.contato-conteudo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.contato-dados {
+  display: grid;
+  gap: 22px;
+  margin-top: 35px;
+}
+
+.contato-dados div {
+  display: grid;
+  gap: 6px;
+}
+
+.contato-dados strong {
+  font-size: 15px;
+}
+
+.contato-dados span,
+.contato-dados a {
+  color: #6f625b;
+  line-height: 1.5;
+}
+
+.contato-dados a {
+  color: #8b451f;
+  font-weight: bold;
+}
+
+.contato-formulario {
+  padding: 35px;
+  background-color: #f3ebe4;
+  border: 1px solid #eaded5;
+  border-radius: 10px;
+}
+
+.contato-formulario h2 {
+  margin-bottom: 25px;
+  font-size: 26px;
+}
+
+.contato-formulario label {
+  display: block;
+  margin-top: 18px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.contato-formulario input,
+.contato-formulario textarea {
+  width: 100%;
+  margin-top: 8px;
+  padding: 13px 14px;
+  border: 1px solid #d9c9bd;
+  border-radius: 6px;
+  background-color: white;
+  color: #3b2920;
+  font: inherit;
+}
+
+.contato-formulario textarea {
+  resize: vertical;
+}
+
+.contato-formulario button {
+  width: 100%;
+  margin-top: 25px;
+  padding: 14px 20px;
+  border: 0;
+  border-radius: 6px;
+  background-color: #8b451f;
+  color: white;
+  font: inherit;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contato-formulario button:hover {
+  background-color: #6f3518;
+}
+
+@media (max-width: 900px) {
+  .historia-sobre,
+  .contato-conteudo {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .historia-conteudo,
+  .contato-informacoes {
+    max-width: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .pagina-cabecalho {
+    padding: 70px 20px 50px;
+  }
+
+  .pagina-cabecalho h1 {
+    font-size: 36px;
+  }
+
+  .historia-sobre,
+  .contato-conteudo {
+    padding: 70px 20px;
+  }
+
+  .historia-imagem img {
+    height: 350px;
+  }
+
+  .historia-conteudo h2,
+  .contato-informacoes h2 {
+    font-size: 32px;
+  }
+
+  .contato-formulario {
+    padding: 25px;
+  }
 }
 
 /* DIFERENCIAIS */

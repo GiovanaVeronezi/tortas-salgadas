@@ -4,13 +4,13 @@ function Header() {
       <div className="header-container">
 
         <a href="/" className="logo">
-          Tortas & Sabores
+          Tortas da Lu | Tortas & Sabores
         </a>
 
         <nav className="nav">
           <a href="/">Início</a>
           <a href="/tortas">Tortas</a>
-          <a href="/sobre">Sobre nós</a>
+          <a href="/sobre">Sobre</a>
           <a href="/contato">Contato</a>
         </nav>
 
